@@ -1,0 +1,126 @@
+/*卡片*/
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* 改變為 center 以使卡片更靠近 */
+    gap: 10px; /* 減少 gap 以縮小卡片間的間距 */
+    padding: 100px 20px;
+    
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 10px;
+    flex: 1 1 calc(33.333% - 20px); /* 保持卡片布局 */
+    box-sizing: border-box;
+    max-width: 300px;
+    border: none; /* 移除按鈕的默認邊框 */
+    padding: 0;
+    text-align: center; /* 確保文本對齊 */
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+  padding: 15px;
+  text-align: center;
+  width: 100%;
+}
+
+.card h3 {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.card p {
+    color: #333;
+    margin: 10px 0;
+}
+
+.card:hover {
+    cursor: pointer; /* 鼠標移過時顯示為指針 */
+}
+  
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-content {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .card h3 {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .card p {
+    color: #333;
+    margin: 10px 0;
+  }
+  /*橫向卡片排版*/
+  .horizontal-card {
+    display: flex;
+    flex-direction: row;
+    max-width: 800px; /* 控制卡片的最大寬度 */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.horizontal-card img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+.horizontal-card .card-content {
+    padding: 15px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn-custom {
+  background-color:  #6abf69; /* 自定義綠色背景 */
+  color: white; /* 白色字體 */
+  border: none; /* 移除邊框 */
+  font-size: 24px;
+}
+
+.btn-custom:hover {
+  background-color: #218838; 
+  color: white;/* 滑鼠懸停時更深的綠色 */
+}
+.custom-modal-header{
+  background-color: #6abf69;
+  color: white;
+}
+  @media (max-width: 900px) {
+    .card {
+      flex: 1 1 calc(50% - 20px); /* 減少間距 */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .card {
+      flex: 1 1 calc(100% - 20px); /* 減少間距 */
+    }
+  }

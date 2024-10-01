@@ -1,0 +1,52 @@
+.custom-card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  background-color: #f8f9fa;
+}
+
+.carousel-item img {
+  width: 80%;
+  height: 500px; /* 固定圖片高度 */
+  object-fit: cover; /* 保持圖片比例且填滿容器 */
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 20
+}
+.btn-custom-green {
+  background-color: #6abf69;
+  color: white;
+  border: none; /* 移除邊框 */
+}
+
+.btn-custom-green:hover {
+  background-color:#5fa95e;
+  color: white;
+}
+
+.btn-custom-green:active {
+  background-color:#5fa95e;
+  color: white;
+  border: none; /* 移除邊框 */
+}
+/* 獲取焦點時的樣式 */
+.btn-custom-green:focus {
+  background-color: #5fa95e; /* 焦點時的背景色 */
+  border-color: #5fa95e; /* 焦點時的邊框色 */
+  color: white; /* 點擊時的文字顏色 */
+  outline: none; /* 移除藍色外框 */
+  
+}
+
+ul.custom-list {
+  list-style-type: disc; /* 使用實心圓點 */
+
+}
+ul.custom-list li {
+  margin-bottom: 10px; /* 增加項目之間的間距 */
+}

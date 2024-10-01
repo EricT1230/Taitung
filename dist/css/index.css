@@ -1,0 +1,31 @@
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* 黑色背景，50%透明度 */
+    z-index: 1; /* 确保遮罩层位于图片之上 */
+  }
+  
+  .carousel-caption {
+    z-index: 2; /* 确保文字在遮罩层之上 */
+    color: white; /* 确保文字在遮罩上清晰可见 */
+  }
+  .carousel-caption h3 {
+    font-size: 4vw; /* 字体大小基于视口宽度的4% */
+    color: white;
+    font-family: "LXGW WenKai Mono TC", monospace;
+  }
+  .lxgw-wenkai-mono-tc-bold {
+    font-family: "LXGW WenKai Mono TC", monospace;
+    font-weight: 700;
+    font-style: normal;
+  }
+  @media (max-width: 768px) {
+    .carousel-caption h3 {
+      font-size: 7vw; /* 在屏幕宽度小于768px时调整字体大小 */
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .carousel-caption h3 {
+      font-size: 10vw; /* 在屏幕宽度大于1200px时调整字体大小 */
+    }
+  }
+  

@@ -1,0 +1,29 @@
+.content {
+  margin-top: 20px;
+  padding: 20px; /* 增加內邊距，避免內容緊貼邊框 */
+  border: 2px solid #dbdbdb; /* 設置外框的顏色和寬度 */
+  border-radius: 10px; /* 可以讓外框也有圓角效果 */
+  background-color:#f8ffd3
+}
+
+.image-wrapper img {
+  border-radius: 10px; /* 可根據需求調整圓角半徑 */
+  width: 100%;
+  height: auto;
+  max-width: 1000px;
+}
+
+.content-title {
+  font-weight: bold;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.content-text {
+  margin-top: 10px;
+  text-align: justify;
+}
+.custom-container {
+  max-width: 1500px; /* 調整這裡的數值來控制最大寬度 */
+  
+}
